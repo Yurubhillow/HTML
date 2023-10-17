@@ -1,0 +1,207 @@
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaekebeth Couture</title>
+    <style>
+      /* Reset some default styles */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Set the background image for the body */
+      body {
+        background-image: url("demopics/image1.jpg.jpeg"); /* Replace 'background.jpg' with your image file path */
+        background-size: cover;
+        background-repeat: repeat;
+        background-attachment: fixed; /* Keeps the background fixed as you scroll */
+      }
+
+      /* Basic styling for the header */
+      header {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.7
+        ); /* Semi-transparent background */
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 36px;
+      }
+
+      /* Styling for the main content */
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Styling for dress images and descriptions */
+      .dress {
+        margin-bottom: 30px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.7
+        ); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .dress img {
+        max-width: 10%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .dress h2 {
+        color: #333;
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .dress p {
+        color: #333;
+        font-size: 16px;
+      }
+
+      /* Styling for the footer */
+      footer {
+        background-color: rgba(
+          51,
+          51,
+          51,
+          0.7
+        ); /* Semi-transparent background */
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Styling for the navigation menu */
+      .navigation ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navigation li {
+        margin: 0 20px;
+        position: relative; /* Add this to position sub-menu */
+      }
+
+      .navigation a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      /* Styling for dropdown menus */
+      .dropdown ul {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        list-style-type: none;
+        padding: 10px;
+        top: 100%; /* Position below the parent item */
+        left: 0;
+      }
+
+      /* Display sub-menu when hovering over the parent item */
+      .dropdown:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>KAEKE COUNTURE</h1>
+      <p>Discover Your Perfect Wedding Gown</p>
+    </header>
+
+    <!-- Navigation Links -->
+    <nav class="navigation">
+      <ul>
+        <li class="dropdown">
+          <a href="#">Dresses</a>
+          <ul>
+            <li class="dropdown">
+              <a href="#">coloured Gown</a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="demopics/image1.jpg.jpeg" alt="coloured Gown 1" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="demopics/image2.jpg.jpeg" alt="coloured Gown 2" />
+                  </a>
+                </li>
+                <!-- Add more images and links for varieties -->
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <img src="demopics/image3.jpg.jpeg" alt="white Gown" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="demopics/image3.jpg.jpeg" alt="Short Dress" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="long_dress_image.jpg" alt="Long Dress" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="bridesmaids_image.jpg" alt="Bridesmaids" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="models_image.jpg" alt="Models" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content Section for "Dresses" -->
+    <div class="container">
+      <div class="dress">
+        <h2>Welcome to Kaekebeth Couture</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          aliquam, dolorum inventore reiciendis est fugit minus molestias et
+          laborum rerum voluptas veniam possimus eaque non corrupti nobis libero
+          repellendus ratione.
+        </p>
+      </div>
+    </div>
+
+    <footer>&copy; 2023 Kaekebeth Couture</footer>
+  </body>
+</html>
